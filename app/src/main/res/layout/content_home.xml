@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".HomeActivity"
+        tools:showIn="@layout/app_bar_home">
+
+        <Button
+            android:id="@+id/regularfalsi"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/custom_btn"
+            android:drawableLeft="@drawable/ic_radio_button"
+            android:paddingLeft="5dp"
+            android:text="REGULAR FALSI" />
+
+        <Button
+            android:id="@+id/biseksi"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/custom_btn"
+            android:drawableLeft="@drawable/ic_radio_button"
+            android:paddingLeft="5dp"
+            android:text="BISEKSI" />
+
+
+        <Button
+            android:id="@+id/secant"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/custom_btn"
+            android:drawableLeft="@drawable/ic_radio_button"
+            android:paddingLeft="5dp"
+            android:text="SECANT" />
+
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner1" />
+
+</RelativeLayout>

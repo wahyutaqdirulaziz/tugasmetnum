@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorCell">
+
+    <TextView
+        android:id="@+id/txtNo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="@drawable/cell_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#F0F0F0"
+        android:text="No" />
+
+    <TextView
+        android:id="@+id/txtN"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cell_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#F0F0F0"
+        android:text="Xn" />
+
+    <TextView
+        android:id="@+id/txtFXN"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cell_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#F0F0F0"
+        android:text="F(Xn)" />
+
+    <TextView
+        android:id="@+id/txtFXN1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cell_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#F0F0F0"
+        android:text="X(n+1)" />
+</LinearLayout>

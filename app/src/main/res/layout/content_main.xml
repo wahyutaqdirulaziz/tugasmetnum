@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_toLeftOf="@id/result"
+            android:textSize="19dp"
+            android:paddingTop="8dp"
+            android:textColor="#F0F0F0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result:"/>
+
+        <TextView
+        android:id="@+id/result"
+        android:textSize="24dp"
+        android:padding="5dp"
+        android:textColor="#DFB20C"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+        android:text="-"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background = "@color/colorCell" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="No"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "left"
+            android:padding = "5dp"
+            android:text = "f(a)"
+            android:textColor = "#ffffff"/>
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "left"
+            android:padding = "5dp"
+            android:text = "f(b)"
+            android:textColor = "#ffffff" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "left"
+            android:padding = "5dp"
+            android:text = "c"
+            android:textColor = "#ffffff" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "left"
+            android:padding = "5dp"
+            android:text = "f(c)"
+            android:textColor = "#ffffff" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "left"
+            android:padding = "5dp"
+            android:text = "ERC"
+            android:textColor = "#ffffff" />
+    </LinearLayout>
+
+    <ListView
+        android:id = "@+id/listview"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:divider = "@null"
+        android:layout_marginBottom="85dp"/>
+
+</LinearLayout>

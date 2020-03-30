@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="id.haqiqi_studio.regularfalsi.MainActivity">
+    <item
+        android:id="@+id/action_celledit"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_show_hide"
+        android:title="Hide"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_list"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_list"
+        android:title="List Jordan"
+        app:showAsAction="withText" />
+</menu>

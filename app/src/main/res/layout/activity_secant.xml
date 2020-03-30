@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecantActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <include layout="@layout/content_secant" />
+
+
+        <LinearLayout
+            android:background="@color/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <EditText
+                android:id="@+id/function"
+                android:background="@drawable/custom_edit"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Function"/>
+
+            <LinearLayout
+                android:background="@color/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/nilai1"
+                    android:layout_width="40dp"
+                    android:text="@string/nilai1"
+                    android:inputType="number|numberSigned"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edit"
+                    android:padding="5dp"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/nilai2"
+                    android:background="@drawable/custom_edit"
+                    android:padding="5dp"
+                    android:text="@string/nilai2"
+                    android:inputType="number|numberSigned"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="XTOL:"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/xtol"
+                    android:background="@drawable/custom_edit"
+                    android:padding="5dp"
+                    android:text="0.0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/dec"
+                    android:background="@drawable/custom_edit"
+                    android:padding="5dp"
+                    android:text="3"
+                    android:inputType="number|numberSigned"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        app:fabSize="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_directions_run" />
+</android.support.design.widget.CoordinatorLayout>

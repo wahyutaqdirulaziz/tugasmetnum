@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorCell">
+
+    <TextView
+        android:id="@+id/txtNo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="@drawable/cell_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#F0F0F0"
+        android:text="No" />
+
+    <TextView
+        android:id="@+id/txtFA"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cell_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#F0F0F0"
+        android:text="f(a)" />
+
+    <TextView
+        android:id="@+id/txtFB"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cell_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#F0F0F0"
+        android:text="f(b)" />
+
+    <TextView
+        android:id="@+id/txtC"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cell_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#F0F0F0"
+        android:text="c" />
+
+    <TextView
+        android:id="@+id/txtFC"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cell_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#F0F0F0"
+        android:text="f(c)" />
+
+    <TextView
+        android:id="@+id/txtERC"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cell_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#F0F0F0"
+        android:text="ERC" />
+</LinearLayout>
