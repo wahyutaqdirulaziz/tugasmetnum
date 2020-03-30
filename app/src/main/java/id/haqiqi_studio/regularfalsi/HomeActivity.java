@@ -176,7 +176,6 @@ public class HomeActivity extends AppCompatActivity
     void share() {
         Intent i = new Intent();
         i.setAction(Intent.ACTION_SEND);
-        i.putExtra(Intent.EXTRA_TEXT, "dan Yuks buruan download App Metode Numerik disini: " + getString(R.string.share_link));
         i.setType("text/plain");
         startActivity(Intent.createChooser(i, "Bagikan Ke:"));
     }
